@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)config/BurtsonLabs.globalconfig" />
+  </ItemGroup>
+</Project>

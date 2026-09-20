@@ -1,0 +1,35 @@
+is_global = true
+
+# Burtson Labs analyzer rules
+dotnet_diagnostic.BL0001.severity = warning
+dotnet_diagnostic.BL0002.severity = warning
+
+# Prefer file-scoped namespaces and make naming conventions visible in builds.
+dotnet_diagnostic.IDE0161.severity = warning
+
+dotnet_naming_rule.interfaces_start_with_i.symbols = interfaces
+dotnet_naming_rule.interfaces_start_with_i.style = prefix_i
+dotnet_naming_rule.interfaces_start_with_i.severity = warning
+
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+dotnet_naming_style.prefix_i.required_prefix = I
+dotnet_naming_style.prefix_i.capitalization = pascal_case
+
+dotnet_naming_rule.async_methods_end_in_async.symbols = async_methods
+dotnet_naming_rule.async_methods_end_in_async.style = suffix_async
+dotnet_naming_rule.async_methods_end_in_async.severity = warning
+
+dotnet_naming_symbols.async_methods.applicable_kinds = method
+dotnet_naming_symbols.async_methods.required_modifiers = async
+dotnet_naming_style.suffix_async.required_suffix = Async
+dotnet_naming_style.suffix_async.capitalization = pascal_case
+
+dotnet_naming_rule.private_fields_use_underscore.symbols = private_fields
+dotnet_naming_rule.private_fields_use_underscore.style = underscore_camel
+dotnet_naming_rule.private_fields_use_underscore.severity = warning
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+dotnet_naming_symbols.private_fields.required_modifiers = readonly
+dotnet_naming_style.underscore_camel.required_prefix = _
+dotnet_naming_style.underscore_camel.capitalization = camel_case

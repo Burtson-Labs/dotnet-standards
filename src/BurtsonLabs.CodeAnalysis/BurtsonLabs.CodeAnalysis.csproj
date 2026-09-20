@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>true</IsPackable>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <PackageId>BurtsonLabs.CodeAnalysis</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Burtson Labs</Authors>
+    <Description>Roslyn analyzers and shared .NET conventions from Burtson Labs.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Burtson-Labs/dotnet-standards</RepositoryUrl>
+    <PackageTags>roslyn;analyzers;dotnet;standards;style</PackageTags>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <NoWarn>$(NoWarn);RS1036;RS2008</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(OutputPath)$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    <None Include="../../config/BurtsonLabs.globalconfig" Pack="true" PackagePath="buildTransitive/config" />
+    <None Include="../../buildTransitive/BurtsonLabs.CodeAnalysis.props" Pack="true" PackagePath="buildTransitive" />
+    <None Include="../../README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>
