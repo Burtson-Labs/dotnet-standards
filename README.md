@@ -16,12 +16,12 @@
   [![Roslyn](https://img.shields.io/badge/Roslyn-analyzer-512BD4?logo=dotnet)](https://github.com/dotnet/roslyn)
   [![.NET](https://img.shields.io/badge/.NET-8%2B-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 
-  **<img src="https://api.iconify.design/lucide/heart-handshake.svg?color=%23a60ee5&width=16" align="absmiddle" alt=""> Open standards, courtesy of [Burtson Labs](https://burtson.ai).**
+  **<img src="https://icons.burtson.ai/svg-accent/hand-heart.svg" align="absmiddle" alt=""> Open standards, courtesy of [Burtson Labs](https://burtson.ai).**
 </div>
 
 ---
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/blocks.svg?color=%23f0f6fc&height=22"/><img src="https://api.iconify.design/lucide/blocks.svg?color=%230d1117&height=22" align="center" alt=""/></picture> Interfaces belong with the code they describe
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://icons.burtson.ai/svg-white/blocks.svg"/><img src="https://icons.burtson.ai/svg-black/blocks.svg" align="center" alt=""/></picture> Interfaces belong with the code they describe
 
 When an interface has exactly one implementation in the compilation, Burtson Labs keeps both in one file—with the implementation first:
 
@@ -41,7 +41,7 @@ The implementation is the primary thing a reader is looking for. The interface r
 
 ---
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/list-checks.svg?color=%23f0f6fc&height=22"/><img src="https://api.iconify.design/lucide/list-checks.svg?color=%230d1117&height=22" align="center" alt=""/></picture> Analyzer rules
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://icons.burtson.ai/svg-white/list-checks.svg"/><img src="https://icons.burtson.ai/svg-black/list-checks.svg" align="center" alt=""/></picture> Analyzer rules
 
 | Rule | Default | Meaning |
 |---|---:|---|
@@ -59,7 +59,7 @@ The analyzer reasons about implementations visible in the current compilation. P
 
 ---
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/package-plus.svg?color=%23f0f6fc&height=22"/><img src="https://api.iconify.design/lucide/package-plus.svg?color=%230d1117&height=22" align="center" alt=""/></picture> Install
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://icons.burtson.ai/svg-white/package-build.svg"/><img src="https://icons.burtson.ai/svg-black/package-build.svg" align="center" alt=""/></picture> Install
 
 After the first NuGet release:
 
@@ -82,7 +82,7 @@ dotnet_diagnostic.BL0002.severity = error
 
 ---
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/gauge.svg?color=%23f0f6fc&height=22"/><img src="https://api.iconify.design/lucide/gauge.svg?color=%230d1117&height=22" align="center" alt=""/></picture> Strict mode is explicit
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://icons.burtson.ai/svg-white/gauge.svg"/><img src="https://icons.burtson.ai/svg-black/gauge.svg" align="center" alt=""/></picture> Strict mode is explicit
 
 [`config/BurtsonLabs.Strict.props`](config/BurtsonLabs.Strict.props) enables these solution-wide decisions together:
 
@@ -98,7 +98,7 @@ Strict mode is deliberately not activated merely by installing the analyzer. Imp
 
 ---
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/flask-conical.svg?color=%23f0f6fc&height=22"/><img src="https://api.iconify.design/lucide/flask-conical.svg?color=%230d1117&height=22" align="center" alt=""/></picture> Build and test
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://icons.burtson.ai/svg-white/beaker.svg"/><img src="https://icons.burtson.ai/svg-black/beaker.svg" align="center" alt=""/></picture> Build and test
 
 ```bash
 dotnet test tests/BurtsonLabs.CodeAnalysis.Tests/BurtsonLabs.CodeAnalysis.Tests.csproj
@@ -114,7 +114,7 @@ The test suite compiles in-memory C# samples and verifies all important placemen
 
 ---
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/workflow.svg?color=%23f0f6fc&height=22"/><img src="https://api.iconify.design/lucide/workflow.svg?color=%230d1117&height=22" align="center" alt=""/></picture> Contributing
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://icons.burtson.ai/svg-white/workflow-branch.svg"/><img src="https://icons.burtson.ai/svg-black/workflow-branch.svg" align="center" alt=""/></picture> Contributing
 
 Issues and pull requests are welcome. New analyzer rules should explain the architectural cost they prevent, include positive and negative test cases, and remain useful outside a single Burtson Labs repository.
 
